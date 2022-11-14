@@ -1,0 +1,5 @@
+langchain==0.0.13
+openai
+faiss-cpu
+streamlit
+streamlit-chat
