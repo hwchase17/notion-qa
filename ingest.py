@@ -5,10 +5,22 @@ import faiss
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
 import pickle
+import argparse
 
 
 # Here we load in the data in the format that Notion exports it in.
-ps = list(Path("Notion_DB/").glob("**/*.md"))
+
+parser = argparse.ArgumentParser(description="Ingest markdown or csv from a directory")
+parser.add_argument(
+    "-d",
+    "--directory",
+    type=str,
+    help="The directory to use for training",
+    default="Notion_DB/",
+)
+args = parser.parse_args()
+
+ps = list(Path(args.directory).glob("**/*.md"))
 
 data = []
 sources = []
