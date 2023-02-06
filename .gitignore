@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# recently added
+credentials.json
+.vscode/
+Calendly/
+Text/

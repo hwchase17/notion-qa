@@ -8,7 +8,9 @@ import pickle
 
 
 # Here we load in the data in the format that Notion exports it in.
-ps = list(Path("Notion_DB/").glob("**/*.md"))
+# ps = list(Path("Text/").glob("**/*.txt"))
+ps = list(Path("Calendly/").glob("**/*.csv"))
+
 
 data = []
 sources = []
