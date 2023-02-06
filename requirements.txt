@@ -3,3 +3,6 @@ openai
 faiss-cpu
 streamlit
 streamlit-chat
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
