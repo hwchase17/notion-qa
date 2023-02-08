@@ -133,3 +133,5 @@ credentials.json
 .vscode/
 Calendly/
 Text/
+.DS_Store
+token.json

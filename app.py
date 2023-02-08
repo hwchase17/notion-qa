@@ -32,28 +32,28 @@ if st.button("Submit"):
 
   st.text(f'Answers: {answers}')
 
-  answers2 = []
-  for answer in answers:
-    print(answer)
-    if "I don\'t know" not in answer:
-      question = f'{answer}. Who\'s LinkedIn is this? What city are they located in?"'
-      # qa_instance2 = QA()
-      answer2, source = qa_instance.ask_question(question=question)
-      answers2.append(answer2)
-    else: 
-      answers2.append("Unable to find LinkedIn")
+  # answers2 = []
+  # for answer in answers:
+  #   print(answer)
+  #   if "I don\'t know" not in answer:
+  #     question = f'{answer}. Who\'s LinkedIn is this? What city are they located in?"'
+  #     # qa_instance2 = QA()
+  #     answer2, source = qa_instance.ask_question(question=question)
+  #     answers2.append(answer2)
+  #   else: 
+  #     answers2.append("Unable to find LinkedIn")
 
-  st.text(f'Answers: {answers2}')
+  # st.text(f'Answers: {answers2}')
 
-  formatted_list = []
-  for item in answers2:
-    formatted_list.append([item])
+  # formatted_list = []
+  # for item in answers2:
+  #   formatted_list.append([item])
 
-  print(f'{formatted_list=}')
-  gsheets = Edit_Sheet()
-  gsheets.update(formatted_list)
+  # print(f'{formatted_list=}')
+  # gsheets = Edit_Sheet()
+  # gsheets.update(formatted_list)
 
-  st.text("Your Google Sheet has been updated!")
+  # st.text("Your Google Sheet has been updated!")
 
 
   

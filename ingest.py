@@ -32,7 +32,10 @@ for i, d in enumerate(data):
 
 # Here we create a vector store from the documents and save it to disk.
 store = FAISS.from_texts(docs, OpenAIEmbeddings(), metadatas=metadatas)
+# This creates an index out of the store data structure
 faiss.write_index(store.index, "docs.index")
+# Now that it's saved to disk, we can remove the index from memory
 store.index = None
+# This keeps the vectors from the store accessible, but this is not related to the index
 with open("faiss_store.pkl", "wb") as f:
     pickle.dump(store, f)
