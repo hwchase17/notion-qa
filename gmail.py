@@ -38,9 +38,9 @@ def main():
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file(
+          flow = InstalledAppFlow.from_client_secrets_file(
                 'credentials.json', SCOPES)
-            creds = flow.run_local_server(port=0)
+          creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
         with open('token.json', 'w') as token:
             token.write(creds.to_json())
@@ -48,10 +48,11 @@ def main():
     try:
         # Call the Gmail API
         service = build('gmail', 'v1', credentials=creds)
-        email_list_response = service.users().messages().list(userId='me', maxResults=1000, q="after:2022/02/01 before:2022/02/28").execute()
+        email_list_response = service.users().messages().list(userId='me', maxResults=600, q="after:2020/12/20 before:2021/02/28").execute()
         results = []
         email_list = email_list_response['messages']
-        # print(email_list)
+        print(f'{len(email_list)=}')
+        print(f'{email_list}')
         for email in email_list:
           if email['id']:
             results.append(service.users().messages().get(userId='me', id=email['id']).execute())

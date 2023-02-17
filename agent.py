@@ -8,6 +8,7 @@ import openai
 import ast
 
 def vectordb_qa_tool(query: str) -> str:
+    print("here")
     langchain.verbose=True
     """Tool to answer a question."""
     index = faiss.read_index("docs.index")
@@ -43,10 +44,23 @@ def agent(question):
   # Thought: I need to solve this iteratively. Let me first choose which tool to use to find Marina's LinkedIn, then come back to Charlotte later.
 
   prefix = """Answer the following questions as best you can. You have access to the following tools:"""
-  suffix = """Begin!"
+  suffix = """
+EXAMPLES:
+Question: What is David Patterson-Cole's email? Check the db.
+Thought: I need to use the vector_db_qa tool to find the email.
+Action: vector_db_qa
+Action Input: David Patterson-Cole email 
 
-  Question: {input}
-  {agent_scratchpad}"""
+Question: Summarize this page: https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquake
+Thought: I need to get the page data and then summarize it.
+Action: Requests
+Action Input: https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquake
+    
+  
+Begin!"
+
+Question: {input}
+{agent_scratchpad}"""
 
   prompt = ZeroShotAgent.create_prompt(
       tools, 
@@ -57,6 +71,7 @@ def agent(question):
 
   print(prompt.template)
 
+  # llm_chain = LLMChain(llm=OpenAI(temperature=0, model_name="text-curie-001"), prompt=prompt)
   llm_chain = LLMChain(llm=OpenAI(temperature=0), prompt=prompt)
 
   tool_names = [tool.name for tool in tools]
@@ -75,25 +90,26 @@ def agent(question):
 def main():
   # use a separate LLM to check if "iterative" and return the array to iterate over
   prompt_template_1 = """
-    You must extract the entities from the input question and return two things: 1) the entities in a list 2) the "Question Structure", which is the original question with a placeholder for the entities.
+You must extract the entities from the input question and return two things: 1) the entities in a list 2) the "Question Structure", which is the original question with a placeholder for the entities.
 
-    Question: What is the population of New York City and Paris? 
-    Answer:["New York City", "Paris"]--|--What is the population of (entity)?
+Question: What is the population of New York City and Paris? 
+Answer:["New York City", "Paris"]--|--What is the population of (entity)?
 
-    Question: Where does David Patterson-Cole, Ganesh Thirumurthi, Josh Bitonte, and Julia Di Spirito live?
-    Answer:["David Patterson-Cole", "Ganesh Thirumurthi", "Josh Bitonte", "Julia Di Spirito"]--|--Where does (entity) live?
+Question: Where does David Patterson-Cole, Ganesh Thirumurthi, Josh Bitonte, and Julia Di Spirito live?
+Answer:["David Patterson-Cole", "Ganesh Thirumurthi", "Josh Bitonte", "Julia Di Spirito"]--|--Where does (entity) live?
 
-    Begin!
+Begin!
 
-    Question: Find the locations of Marina Nester and Charlotte Gall. First find their LinkedIn profiles in the db and then second look up the LinkedIn profiles to find the location.
-    Answer: 
+Question: Find the emails of Marina Nester and Charlotte Gall.
+Answer: 
   """
-
+    # Question: Find the locations of Marina Nester and Charlotte Gall. First find their LinkedIn profiles in the db and then second look up the LinkedIn profiles to find the location.
     # Question: Find the emails of Marina Nester and Charlotte Gall.
   # Find the locations of Marina Nester and Charlotte Gall using their LinkedIn profiles in the db
 
   response = openai.Completion.create(
     model="text-davinci-003",
+    # model="text-curie-001",
     prompt=prompt_template_1,
     max_tokens=500,
     temperature=0

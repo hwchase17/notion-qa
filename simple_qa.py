@@ -31,22 +31,22 @@ result = chain({"question": args.question})
 print(f"Answer: {result['answer']}")
 print(f"Sources: {result['sources']}")
 
-# print(args.question)
-# text = args.question.replace("\n", " ")
-# query_vector = openai.Embedding.create(input = [text], model="text-embedding-ada-002")['data'][0]['embedding']
-# # print(query_vector)
-# query_tensor = torch.tensor(query_vector).view(1, -1)
-# print(query_tensor.shape)
-# # D, I = index.search(query_tensor, 4)     # actual search
-# d, i = index.search(query_tensor, 4)
-# print(i)
-# with open("text.pkl", "rb") as f:
-#   text_list = pickle.load(f)
+print(args.question)
+text = args.question.replace("\n", " ")
+query_vector = openai.Embedding.create(input = [text], model="text-embedding-ada-002")['data'][0]['embedding']
+# print(query_vector)
+query_tensor = torch.tensor(query_vector).view(1, -1)
+print(query_tensor.shape)
+# D, I = index.search(query_tensor, 4)     # actual search
+d, i = index.search(query_tensor, 4)
+print(i)
+with open("text.pkl", "rb") as f:
+  text_list = pickle.load(f)
 
-# doc1 = text_list[i[0][0]]
-# doc2 = text_list[i[0][1]]
-# doc3 = text_list[i[0][2]]
-# doc4 = text_list[i[0][3]]
+doc1 = text_list[i[0][0]]
+doc2 = text_list[i[0][1]]
+doc3 = text_list[i[0][2]]
+doc4 = text_list[i[0][3]]
 # print(doc1, "\n", doc2, "\n", doc3, "\n", doc4)
 
 # prompt_template = 
