@@ -2,22 +2,30 @@ import langchain
 from langchain.agents import load_tools
 from langchain.agents import ZeroShotAgent, Tool, AgentExecutor
 from langchain import OpenAI, LLMChain, VectorDBQAWithSourcesChain, PromptTemplate
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
 import faiss
 import pickle
 import openai
 import ast
 
 def vectordb_qa_tool(query: str) -> str:
-    print("here")
+    # print("here")
     langchain.verbose=True
     """Tool to answer a question."""
-    index = faiss.read_index("docs.index")
-    with open("faiss_store.pkl", "rb") as f:
-      store = pickle.load(f)
-    store.index = index
-    chain = VectorDBQAWithSourcesChain.from_llm(llm=OpenAI(temperature=0), vectorstore=store, k=4)
+    # index = faiss.read_index("docs.index")
+    # with open("faiss_store.pkl", "rb") as f:
+      # store = pickle.load(f)
+    index = FAISS.load_local('faiss', OpenAIEmbeddings())
+    # store.index = index
+    chain = VectorDBQAWithSourcesChain.from_llm(llm=OpenAI(temperature=0), vectorstore=index, k=8)
     result = chain({"question": query})
     return result['answer'], result['sources']
+
+def requests_tool_placeholder(query: str):
+  # print('Tried to use Requests. Not implemented yet.')
+  return 'Requests not implemented'
+
 
 def agent(question):
   print(f'{question=}')
@@ -26,11 +34,16 @@ def agent(question):
           name = "vector_db_qa",
           func=vectordb_qa_tool,
           description="Access contextual information such as emails, documents, databases. This should be the first place to look for information."
+      ),
+      Tool(
+          name = "requests_tool_placholder",
+          func=requests_tool_placeholder,
+          description="A portal to the internet. Use this when you need to get specific content from a site. Input should be a specific url, and the output will be all the text on that page."
       )
   ]
 
   # load tools returns a list of tools but I don't want to add a list to a list, so I just add the first element
-  tools.append(load_tools(["requests"])[0])
+  # tools.append(load_tools(["requests"])[0])
 
   # Tool(
   #   name="Requests",
@@ -75,10 +88,10 @@ Question: {input}
   llm_chain = LLMChain(llm=OpenAI(temperature=0), prompt=prompt)
 
   tool_names = [tool.name for tool in tools]
-  tool_names = ["vector_db_qa", "Requests"]
+  # tool_names = ["vector_db_qa", "requests_tool_placeholder"]
   agent = ZeroShotAgent(llm_chain=llm_chain, allowed_tools=tool_names, return_intermediate_steps=True)
 
-  agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True)
+  agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True, max_iterations=2)
 
   # agent_executor.run("What are the names of the people I met with in February. Use the calendly emails to find who I met with.")
 
@@ -88,7 +101,7 @@ Question: {input}
   return agent_executor.run(question)
 
 def main():
-  # use a separate LLM to check if "iterative" and return the array to iterate over
+  use a separate LLM to check if "iterative" and return the array to iterate over
   prompt_template_1 = """
 You must extract the entities from the input question and return two things: 1) the entities in a list 2) the "Question Structure", which is the original question with a placeholder for the entities.
 
@@ -100,13 +113,9 @@ Answer:["David Patterson-Cole", "Ganesh Thirumurthi", "Josh Bitonte", "Julia Di 
 
 Begin!
 
-Question: Find the emails of Marina Nester and Charlotte Gall.
+Question: Find the emails of Lana Tang, Christina Nemez, Max Malak, Alex Bonesteel,Lara Ivkovic, Andrei Gorbushkin, Renfred C, Annie Murray, Swetank Pandey
 Answer: 
   """
-    # Question: Find the locations of Marina Nester and Charlotte Gall. First find their LinkedIn profiles in the db and then second look up the LinkedIn profiles to find the location.
-    # Question: Find the emails of Marina Nester and Charlotte Gall.
-  # Find the locations of Marina Nester and Charlotte Gall using their LinkedIn profiles in the db
-
   response = openai.Completion.create(
     model="text-davinci-003",
     # model="text-curie-001",
@@ -127,6 +136,8 @@ Answer:
     final_answer.append(agent(formatted_question))
   # return the aggregate result
   print (f'{final_answer=}')
+
+  # print(agent('Look up all the February 2022 pandadoc emails and use them to create the list of clients '))
 
 main()
 

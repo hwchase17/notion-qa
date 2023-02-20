@@ -139,3 +139,4 @@ Email/
 text.pkl
 docs.index
 faiss_store.pkl
+/faiss
