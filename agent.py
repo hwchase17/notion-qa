@@ -13,12 +13,19 @@ import re
 from transformers import AutoTokenizer
 import concurrent.futures
 
-
-question='Look up all the February 2021 pandadoc emails and use them to create a list of names'
+selection = "notion-feb23"
+faiss_locations = {"gmail": "faiss", "notion-feb22": "faiss_moonchaser_notion_feb22", "notion-feb23": "faiss_moonchaser_xs_embedding_feb23"}
+question='Is billing paused for Robert Geirhos and why? '
 # question='Look up all the February 2021 pandadoc emails and use them to create the list of names from those emails'
 # question='Create a list of February clients. Start by looking up all the February 2021 pandadoc emails. When the email says "Contract Completed", at that name to the list of clients.'
+faiss_location = ''
+for key, value in faiss_locations.items():
+    if key == selection:
+        faiss_location = value
+        break
+    # faiss_location = 'faiss_moonchaser_notion_feb22'
 
-
+print("faiss location", faiss_location)
 def get_summary(prompt):
     summary = openai.Completion.create(
         model="text-davinci-003",
@@ -32,14 +39,17 @@ def get_summary(prompt):
 def vectordb_qa_tool(query: str) -> str:
     langchain.verbose=True
     """Tool to answer a question."""
-    index = FAISS.load_local('faiss', OpenAIEmbeddings())
+    index = FAISS.load_local(faiss_location, OpenAIEmbeddings())
 
     # chain = VectorDBQAWithSourcesChain.from_llm(llm=OpenAI(temperature=0), vectorstore=index, k=8)
     # result = chain({"question": query})
     # return result['answer'], result['sources']
 
     # Step 1: query FAISS 
-    vectors = index.similarity_search(query, k=100)
+    docs_and_scores = index.similarity_search_with_score(query, k=6)
+    #sort docs and scores by highest score first 
+    docs_and_scores.sort(key=lambda x: x[1], reverse=True)
+    vectors = [doc for doc, _ in docs_and_scores]
     clean_vectors = ''
     for vector in vectors:
       clean_vectors += f'{vector.page_content}\n'
