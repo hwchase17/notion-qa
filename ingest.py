@@ -5,8 +5,10 @@ import faiss
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
 import pickle
-
-
+import streamlit as st
+import os
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = openai_api_key
 # Here we load in the data in the format that Notion exports it in.
 ps = list(Path("notion-dump/").glob("**/*.md"))
 
