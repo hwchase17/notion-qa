@@ -24,7 +24,7 @@ for p in ps:
 print("Prepared documents for spliting and processing")
 # Here we split the documents, as needed, into smaller chunks.
 # We do this due to the context limits of the LLMs.
-text_splitter = MarkdownTextSplitter(chunk_size=1500, chunk_overlap=100)
+text_splitter = MarkdownTextSplitter(chunk_size=200, chunk_overlap=20) # try to split on paragraph level for embediings to improve performance
 docs = []
 metadatas = []
 for i, d in enumerate(tqdm.tqdm(data)):
@@ -33,6 +33,7 @@ for i, d in enumerate(tqdm.tqdm(data)):
     metadatas.extend([{"source": sources[i]}] * len(splits))
 
 print("Finished splitting documents")
+print("Created {} documents to process for embeddings".format(len(docs)))
 
 # Here we create a vector store from the documents and save it to disk.
 store = FAISS.from_texts(docs, OpenAIEmbeddings(), metadatas=metadatas)
