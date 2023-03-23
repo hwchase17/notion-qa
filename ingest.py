@@ -1,12 +1,13 @@
 """This is the logic for ingesting Notion data into LangChain."""
-from pathlib import Path
-from langchain.text_splitter import MarkdownTextSplitter
-import faiss
-from langchain.vectorstores import FAISS
+
 from langchain.embeddings import OpenAIEmbeddings
+from langchain.text_splitter import MarkdownTextSplitter
+from langchain.vectorstores import FAISS
+from pathlib import Path
+import faiss
+import os
 import pickle
 import streamlit as st
-import os
 import tqdm
 
 openai_api_key = st.secrets["OPENAI_API_KEY"]

@@ -1,11 +1,11 @@
 """Python file to serve as the frontend"""
-import streamlit as st
+from langchain.chains import VectorDBQAWithSourcesChain
+from langchain.chat_models import ChatOpenAI
 from streamlit_chat import message
 import faiss
-from langchain.chains import VectorDBQAWithSourcesChain
-import pickle
 import os
-from langchain.chat_models import ChatOpenAI
+import pickle
+import streamlit as st
 
 # Load the LangChain.
 index = faiss.read_index("docs.index")

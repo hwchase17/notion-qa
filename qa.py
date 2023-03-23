@@ -1,11 +1,11 @@
 """Ask a question to the notion database."""
-import faiss
-from langchain.chat_models import ChatOpenAI
 from langchain.chains import VectorDBQAWithSourcesChain
-import pickle
+from langchain.chat_models import ChatOpenAI
 import argparse
-import streamlit as st
+import faiss
 import os
+import pickle
+import streamlit as st
 
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 os.environ["OPENAI_API_KEY"] = openai_api_key
