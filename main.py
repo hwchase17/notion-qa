@@ -31,7 +31,7 @@ if "past" not in st.session_state:
 
 
 def get_text():
-    input_text = st.text_input("You: ", "Please answer qustions in chinese 通用人工智能如何消灭资本主义", key="input")
+    input_text = st.text_input("You: ", "What can you do for me?", key="input")
     return input_text
 
 
