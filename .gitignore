@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 Notion_DB/
 notion-dump/
+notion_dump/
 .streamlit/secrets.toml
