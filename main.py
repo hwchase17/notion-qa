@@ -1,24 +1,27 @@
 """Python file to serve as the frontend"""
-import streamlit as st
+from langchain.chains import VectorDBQAWithSourcesChain
+from langchain.chat_models import ChatOpenAI
 from streamlit_chat import message
 import faiss
-from langchain import OpenAI
-from langchain.chains import VectorDBQAWithSourcesChain
+import os
 import pickle
+import streamlit as st
 
 # Load the LangChain.
 index = faiss.read_index("docs.index")
 
 with open("faiss_store.pkl", "rb") as f:
     store = pickle.load(f)
-
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = openai_api_key
 store.index = index
-chain = VectorDBQAWithSourcesChain.from_llm(llm=OpenAI(temperature=0), vectorstore=store)
+model_name = 'gpt-3.5-turbo'
+chain = VectorDBQAWithSourcesChain.from_llm(llm=ChatOpenAI(model_name=model_name, openai_api_key=openai_api_key, temperature=0), vectorstore=store)
 
 
 # From here down is all the StreamLit UI.
-st.set_page_config(page_title="Blendle Notion QA Bot", page_icon=":robot:")
-st.header("Blendle Notion QA Bot")
+st.set_page_config(page_title="Xingfan's Notion QA Bot", page_icon=":robot:")
+st.header("Xingfan's Notion QA Bot")
 
 if "generated" not in st.session_state:
     st.session_state["generated"] = []
@@ -28,7 +31,7 @@ if "past" not in st.session_state:
 
 
 def get_text():
-    input_text = st.text_input("You: ", "Hello, how are you?", key="input")
+    input_text = st.text_input("You: ", "What can you do for me?", key="input")
     return input_text
 
 
@@ -44,5 +47,5 @@ if user_input:
 if st.session_state["generated"]:
 
     for i in range(len(st.session_state["generated"]) - 1, -1, -1):
-        message(st.session_state["generated"][i], key=str(i))
-        message(st.session_state["past"][i], is_user=True, key=str(i) + "_user")
+        message(avatar_style="miniavs", message=st.session_state["generated"][i], key=str(i))
+        message(avatar_style="shapes", message=st.session_state["past"][i], is_user=True, key=str(i) + "_user")

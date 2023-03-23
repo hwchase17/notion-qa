@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Notion_DB/
+notion-dump/
+notion_dump/
+.streamlit/secrets.toml
+docs.index
+faiss_store.pkl
