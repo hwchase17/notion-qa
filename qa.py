@@ -1,9 +1,10 @@
 """Ask a question to the notion database."""
 import faiss
 from langchain import OpenAI
-from langchain.chains import VectorDBQAWithSourcesChain
+from langchain.chains import RetrievalQAWithSourcesChain
 import pickle
 import argparse
+from pprint import pprint
 
 parser = argparse.ArgumentParser(description='Ask a question to the notion DB.')
 parser.add_argument('question', type=str, help='The question to ask the notion DB')
@@ -16,7 +17,7 @@ with open("faiss_store.pkl", "rb") as f:
     store = pickle.load(f)
 
 store.index = index
-chain = VectorDBQAWithSourcesChain.from_llm(llm=OpenAI(temperature=0), vectorstore=store)
+chain = RetrievalQAWithSourcesChain.from_chain_type(OpenAI(temperature=0), chain_type="stuff", retriever=store.as_retriever())
 result = chain({"question": args.question})
-print(f"Answer: {result['answer']}")
-print(f"Sources: {result['sources']}")
+pprint(f"Answer: {result['answer']}")
+pprint(f"Sources: {result['sources']}")
