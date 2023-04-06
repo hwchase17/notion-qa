@@ -6,6 +6,11 @@ from langchain import OpenAI
 from langchain.chains import VectorDBQAWithSourcesChain
 import pickle
 
+# to fix windows path error
+import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+
 # Load the LangChain.
 index = faiss.read_index("docs.index")
 
@@ -28,13 +33,17 @@ if "past" not in st.session_state:
 
 
 def get_text():
-    input_text = st.text_input("You: ", "Hello, how are you?", key="input")
+    input_text = st.text_input("You: ", "<type here>", key="input")
     return input_text
 
 
 user_input = get_text()
 
-if user_input:
+# to avoid non-user-query calls to go to Open AI
+prev_input = ""<type here>"
+
+if prev_input != user_input:
+    prev_input = user_input
     result = chain({"question": user_input})
     output = f"Answer: {result['answer']}\nSources: {result['sources']}"
 
