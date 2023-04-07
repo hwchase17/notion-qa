@@ -2,19 +2,16 @@
 import streamlit as st
 from streamlit_chat import message
 import faiss
-from langchain import OpenAI
-from langchain.chains import VectorDBQAWithSourcesChain
-import pickle
+from langchain import LlamaCpp
+from langchain.chains import RetrievalQAWithSourcesChain
+from langchain.embeddings import LlamaCppEmbeddings
+from langchain.vectorstores import FAISS
 
 # Load the LangChain.
-index = faiss.read_index("docs.index")
-
-with open("faiss_store.pkl", "rb") as f:
-    store = pickle.load(f)
-
-store.index = index
-chain = VectorDBQAWithSourcesChain.from_llm(llm=OpenAI(temperature=0), vectorstore=store)
-
+model_path = "ggml-model-q4_1.bin"
+embeddings = LlamaCppEmbeddings(model_path=model_path)
+db = FAISS.load_local("faiss_index", embeddings)
+chain = RetrievalQAWithSourcesChain.from_llm(llm=LlamaCpp(temperature=0, model_path=model_path), retriever=db.as_retriever())
 
 # From here down is all the StreamLit UI.
 st.set_page_config(page_title="Blendle Notion QA Bot", page_icon=":robot:")

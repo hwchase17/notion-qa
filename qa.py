@@ -1,22 +1,19 @@
 """Ask a question to the notion database."""
-import faiss
-from langchain import OpenAI
+from langchain import LlamaCpp
 from langchain.chains import RetrievalQAWithSourcesChain
-import pickle
+from langchain.embeddings import LlamaCppEmbeddings
+from langchain.vectorstores import FAISS
 import argparse
 
 parser = argparse.ArgumentParser(description='Ask a question to the notion DB.')
 parser.add_argument('question', type=str, help='The question to ask the notion DB')
 args = parser.parse_args()
 
-# Load the LangChain.
-index = faiss.read_index("docs.index")
+model_path = "ggml-model-q4_1.bin"
+embeddings = LlamaCppEmbeddings(model_path=model_path)
+db = FAISS.load_local("faiss_index", embeddings)
 
-with open("faiss_store.pkl", "rb") as f:
-    store = pickle.load(f)
-
-store.index = index
-chain = RetrievalQAWithSourcesChain.from_llm(llm=OpenAI(temperature=0), retriever=store.as_retriever())
+chain = RetrievalQAWithSourcesChain.from_llm(llm=LlamaCpp(temperature=0, model_path=model_path), retriever=db.as_retriever())
 result = chain({"question": args.question})
 print(f"Answer: {result['answer']}")
 print(f"Sources: {result['sources']}")

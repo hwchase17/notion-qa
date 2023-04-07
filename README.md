@@ -12,14 +12,11 @@ In order to set your environment up to run the code here, first install all requ
 pip install -r requirements.txt
 ```
 
-Then set your OpenAI API key (if you don't have one, get one [here](https://beta.openai.com/playground))
+Then you need to download an Alpaca model to the root directory (if you don't have one, get one [here](https://huggingface.co/Pi3141/alpaca-native-13B-ggml/tree/main))
 
-```shell
-export OPENAI_API_KEY=....
-```
 
 # 📄 What is in here?
-- Example data from Blendle 
+- Example data from Blendle
 - Python script to query Notion with a question
 - Code to deploy on StreamLit
 - Instructions for ingesting your own dataset
@@ -42,7 +39,7 @@ IMO, this is a more natural and convenient interface for getting information.
 
 ## 🚀 Code to deploy on StreamLit
 
-The code to run the StreamLit app is in `main.py`. 
+The code to run the StreamLit app is in `main.py`.
 Note that when setting up your StreamLit app you should make sure to add `OPENAI_API_KEY` as a secret environment variable.
 
 ## 🧑 Instructions for ingesting your own dataset

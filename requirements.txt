@@ -3,3 +3,6 @@ openai
 faiss-cpu
 streamlit
 streamlit-chat
+unstructured
+tiktoken
+llama-cpp-python
