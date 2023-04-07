@@ -1,14 +1,13 @@
 """Python file to serve as the frontend"""
 import streamlit as st
 from streamlit_chat import message
-import faiss
 from langchain import LlamaCpp
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.embeddings import LlamaCppEmbeddings
 from langchain.vectorstores import FAISS
 
 # Load the LangChain.
-model_path = "ggml-model-q4_1.bin"
+model_path = "ggml-vicuna-7b-4bit-rev1.bin"
 embeddings = LlamaCppEmbeddings(model_path=model_path)
 db = FAISS.load_local("faiss_index", embeddings)
 chain = RetrievalQAWithSourcesChain.from_llm(llm=LlamaCpp(temperature=0, model_path=model_path), retriever=db.as_retriever())

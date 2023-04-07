@@ -10,6 +10,6 @@ docs = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=0, separator="\n")
 docs = text_splitter.split_documents(docs)
 
-embeddings = LlamaCppEmbeddings(model_path="ggml-model-q4_1.bin")
+embeddings = LlamaCppEmbeddings(model_path="ggml-vicuna-7b-4bit-rev1.bin")
 db = FAISS.from_documents(docs, embeddings)
 db.save_local("faiss_index")

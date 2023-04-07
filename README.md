@@ -12,7 +12,7 @@ In order to set your environment up to run the code here, first install all requ
 pip install -r requirements.txt
 ```
 
-Then you need to download an Alpaca model to the root directory (if you don't have one, get one [here](https://huggingface.co/Pi3141/alpaca-native-13B-ggml/tree/main))
+Then you need to download an Alpaca model to the root directory (if you don't have one, get one [here](https://huggingface.co/eachadea/ggml-vicuna-13b-4bit))
 
 
 # 📄 What is in here?

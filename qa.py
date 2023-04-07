@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(description='Ask a question to the notion DB.')
 parser.add_argument('question', type=str, help='The question to ask the notion DB')
 args = parser.parse_args()
 
-model_path = "ggml-model-q4_1.bin"
+model_path = "ggml-vicuna-7b-4bit-rev1.bin"
 embeddings = LlamaCppEmbeddings(model_path=model_path)
 db = FAISS.load_local("faiss_index", embeddings)
 
