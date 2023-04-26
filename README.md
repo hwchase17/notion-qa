@@ -19,14 +19,13 @@ export OPENAI_API_KEY=....
 ```
 
 # 📄 What is in here?
-- Example data from Blendle 
-- Python script to query Notion with a question
+- Example xml data from the NSF
+- Python script to query NSF xml data with a question
 - Code to deploy on StreamLit
 - Instructions for ingesting your own dataset
 
 ## 📊 Example Data
-This repo uses the [Blendle Employee Handbook](https://www.notion.so/Blendle-s-Employee-Handbook-7692ffe24f07450785f093b94bbe1a09) as an example.
-It was downloaded October 18th so may have changed slightly since then!
+This repo uses the NSF grant data in xml as an example.
 
 ## 💬 Ask a question
 In order to ask a question, run a command like:
