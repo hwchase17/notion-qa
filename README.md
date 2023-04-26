@@ -1,8 +1,8 @@
-# Grant Question-Answering
+# Grant Question-Answering Bot
 
 🤖Ask questions to your database in natural language🤖
 
-💪 Built with [LangChain](https://github.com/hwchase17/langchain) and the  [Facebook AI Similarity Search](https://github.com/facebookresearch/faiss) (faiss). 
+💪 Built with [LangChain](https://github.com/hwchase17/langchain) and the [Facebook AI Similarity Search](https://github.com/facebookresearch/faiss) (faiss). 
 
 # 🌲 Environment Setup
 
