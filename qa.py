@@ -1,9 +1,13 @@
+#/opt/homebrew/bin/python3.11 -m pip install streamlit-chat
+#/opt/homebrew/bin/python3.11 -m pip install tiktoken  
+
+
 """Ask a question to the notion database."""
-import faiss
 from langchain import OpenAI
 from langchain.chains import VectorDBQAWithSourcesChain
 import pickle
 import argparse
+import faiss
 
 parser = argparse.ArgumentParser(description='Ask a question to the notion DB.')
 parser.add_argument('question', type=str, help='The question to ask the notion DB')

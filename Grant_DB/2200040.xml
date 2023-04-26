@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rootTag>
+<Award>
+<AwardTitle><![CDATA[SusChEM: Harnessing Stable Peroxides for Selective Nitrogen Atom and Fluoroalkyl Transfer]]></AwardTitle>
+<AGENCY>NSF</AGENCY>
+<AwardEffectiveDate>05/01/2022</AwardEffectiveDate>
+<AwardExpirationDate>06/30/2024</AwardExpirationDate>
+<AwardTotalIntnAmount>420000.00</AwardTotalIntnAmount>
+<AwardAmount>404662</AwardAmount>
+<AwardInstrument>
+<Value>Standard Grant</Value>
+</AwardInstrument>
+<Organization>
+<Code>03090000</Code>
+<Directorate>
+<Abbreviation>MPS</Abbreviation>
+<LongName>Direct For Mathematical &amp; Physical Scien</LongName>
+</Directorate>
+<Division>
+<Abbreviation>CHE</Abbreviation>
+<LongName>Division Of Chemistry</LongName>
+</Division>
+</Organization>
+<ProgramOfficer>
+<SignBlockName>Paul Blakemore</SignBlockName>
+<PO_EMAI>pblakemo@nsf.gov</PO_EMAI>
+<PO_PHON>7032922726</PO_PHON>
+</ProgramOfficer>
+<AbstractNarration><![CDATA[This award from the Chemical Synthesis Program of the Chemistry Division supports the research of Professor Hao Xu in Chemistry Department at Georgia State University. Professor Xu is developing new, more sustainable methods for converting readily available hydrocarbons into more valuable molecules that contain one or more nitrogen atoms. A large number of small-molecule pharmaceuticals and functional materials contain nitrogen atoms, a situation that makes the chemistry being developed both timely and important for addressing modern synthetic needs. The chemistry is also more sustainable that the current state-of-the-art methods because the reagents used by Professor Xu and his students are derived from iron - the second most abundant metal in the Earth's crust - and stable, common peroxides. These simple reagents replace the much more rare and expensive reagents typically used for the current methods. The research program lies at the interface of organic, inorganic, and mechanistic chemistry; therefore, it provides a unique education opportunity for all levels of young scientists. This opportunity is especially important because of the large number of minority students who attend Georgia State University and Professor Xu's strong commitment to working with those students.&lt;br/&gt; &lt;br/&gt;This research program aims to develop and study novel synthetic approaches that harness stable peroxides to selectively functionalize a broad range of olefins with non-oxygen-based groups. In the first phase of this project, Professor Xu and his students are exploring the reactivity of unique iron complexes with stable peroxides and developing an iron-catalyzed method for selective olefin diazidation/diamination reactions. The work is expanding the development of iron-catalyzed process for a broad range of olefins and N-heterocycles. In the second phase of this project, the group is exploring new iron-catalyzed activation approaches for fluoroalkyl transfer reactions. The work is providing a general and selective approach for olefin functionalization that will likely become a useful tool for organic chemists. In terms of Broader Impact, this project is integrating the effort to develop more sustainable methods for constructing value added molecules with educational activities that include i) transforming teaching with undergraduate mentoring and research and (ii) providing summer research experiences for local high school students and visiting students.&lt;br/&gt;&lt;br/&gt;This award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.]]></AbstractNarration>
+<MinAmdLetterDate>04/19/2022</MinAmdLetterDate>
+<MaxAmdLetterDate>04/19/2022</MaxAmdLetterDate>
+<ARRAAmount/>
+<TRAN_TYPE>Grant</TRAN_TYPE>
+<CFDA_NUM>47.049</CFDA_NUM>
+<NSF_PAR_USE_FLAG>1</NSF_PAR_USE_FLAG>
+<FUND_AGCY_CODE>4900</FUND_AGCY_CODE>
+<AWDG_AGCY_CODE>4900</AWDG_AGCY_CODE>
+<AwardID>2200040</AwardID>
+<Investigator>
+<FirstName>Hao</FirstName>
+<LastName>Xu</LastName>
+<PI_MID_INIT/>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Hao Xu</PI_FULL_NAME>
+<EmailAddress><![CDATA[haohxu@brandeis.edu]]></EmailAddress>
+<NSF_ID>000624563</NSF_ID>
+<StartDate>04/19/2022</StartDate>
+<EndDate/>
+<RoleCode>Principal Investigator</RoleCode>
+</Investigator>
+<Institution>
+<Name>Brandeis University</Name>
+<CityName>WALTHAM</CityName>
+<ZipCode>024532728</ZipCode>
+<PhoneNumber>7817362121</PhoneNumber>
+<StreetAddress>415 SOUTH ST</StreetAddress>
+<StreetAddress2/>
+<CountryName>United States</CountryName>
+<StateName>Massachusetts</StateName>
+<StateCode>MA</StateCode>
+<CONGRESSDISTRICT>05</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_ORG>MA05</CONGRESS_DISTRICT_ORG>
+<ORG_UEI_NUM>MXLZGAMFEKN5</ORG_UEI_NUM>
+<ORG_LGL_BUS_NAME>BRANDEIS UNIVERSITY</ORG_LGL_BUS_NAME>
+<ORG_PRNT_UEI_NUM/>
+</Institution>
+<Performance_Institution>
+<Name><![CDATA[Brandeis University]]></Name>
+<CityName>Waltham</CityName>
+<StateCode>MA</StateCode>
+<ZipCode>024532728</ZipCode>
+<StreetAddress><![CDATA[415 South Street]]></StreetAddress>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<StateName>Massachusetts</StateName>
+<CountryFlag>1</CountryFlag>
+<CONGRESSDISTRICT>05</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_PERF>MA05</CONGRESS_DISTRICT_PERF>
+</Performance_Institution>
+<ProgramElement>
+<Code>6878</Code>
+<Text>Chemical Synthesis</Text>
+</ProgramElement>
+<ProgramReference>
+<Code>8037</Code>
+<Text>Advanced Manufacturing</Text>
+</ProgramReference>
+<ProgramReference>
+<Code>8650</Code>
+<Text>Sustainable Chemistry</Text>
+</ProgramReference>
+<ProgramReference>
+<Code>8676</Code>
+<Text>Critical Elements</Text>
+</ProgramReference>
+<Appropriation>
+<Code/>
+<Name/>
+<APP_SYMB_ID/>
+</Appropriation>
+<Appropriation>
+<Code/>
+<Name/>
+<APP_SYMB_ID/>
+</Appropriation>
+<Fund>
+<Code>01001819DB</Code>
+<Name><![CDATA[NSF RESEARCH & RELATED ACTIVIT]]></Name>
+<FUND_SYMB_ID>040100</FUND_SYMB_ID>
+</Fund>
+<Fund>
+<Code>01001920DB</Code>
+<Name><![CDATA[NSF RESEARCH & RELATED ACTIVIT]]></Name>
+<FUND_SYMB_ID>040100</FUND_SYMB_ID>
+</Fund>
+<FUND_OBLG>2018~384862</FUND_OBLG>
+<FUND_OBLG>2019~19800</FUND_OBLG>
+</Award>
+</rootTag>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rootTag>
+<Award>
+<AwardTitle><![CDATA[PIPP Phase I: Real-time Analytics to Monitor and Predict Emerging Plant Disease]]></AwardTitle>
+<AGENCY>NSF</AGENCY>
+<AwardEffectiveDate>08/01/2022</AwardEffectiveDate>
+<AwardExpirationDate>01/31/2024</AwardExpirationDate>
+<AwardTotalIntnAmount>1000000.00</AwardTotalIntnAmount>
+<AwardAmount>1000000</AwardAmount>
+<AwardInstrument>
+<Value>Standard Grant</Value>
+</AwardInstrument>
+<Organization>
+<Code>05010000</Code>
+<Directorate>
+<Abbreviation>CSE</Abbreviation>
+<LongName>Direct For Computer &amp; Info Scie &amp; Enginr</LongName>
+</Directorate>
+<Division>
+<Abbreviation>CCF</Abbreviation>
+<LongName>Division of Computing and Communication Foundations</LongName>
+</Division>
+</Organization>
+<ProgramOfficer>
+<SignBlockName>Mitra Basu</SignBlockName>
+<PO_EMAI>mbasu@nsf.gov</PO_EMAI>
+<PO_PHON>7032928649</PO_PHON>
+</ProgramOfficer>
+<AbstractNarration><![CDATA[Plant disease outbreaks are increasing and threatening food security for the vulnerable in many areas of the world and in the US.  A stable, nutritious food supply is needed to both lift people out of poverty and improve health outcomes. Plant diseases cause crop losses from 20% to 30% in staple food crops. Plant diseases, both common and recently emerging, are spreading and exacerbated by climate change, transmission with global food trade networks, and emergence of new strains that may be difficult to control. This team of researchers will develop better ways to detect and predict when and where plant diseases will emerge. This research will characterize how human attitudes and social behavior of stakeholders impacts plant disease transmission and adoption of sensor, surveillance and disease prediction technologies.  The team will engage a diverse group of postdoctoral associates, graduate students and research staff through research and workshop participation and foster partnerships for a future Plant Disease Pandemic Preparedness Center.&lt;br/&gt;&lt;br/&gt;Prediction of plant disease pandemics is unreliable due to the lack of real-time detection, surveillance, and data analytics to inform decision-making and prevent spread. This is the grand challenge that the convergence research team will tackle in this Predictive Intelligence for Pandemic Prevention (PIPP) planning grant. In order to improve pandemic prediction and tackle this grand challenge, a new set of predictive tools is needed. In the PIPP Phase I project, the multidisciplinary team will develop a pandemic prediction system called the “Plant Aid Database (PAdb)” that links pathogen detection by in-situ plant disease sensors and remote sensing of crop health, genomic surveillance, real-time spatial and temporal data analytics and climate data to develop predictive simulations of plant disease pandemics. The team plans to validate the PAdb using several model plant pathogens including novel lineages of Phytophthora infestans and the cucurbit downy mildew pathogen Pseudoperonospora cubensis. They plan to engage a broad group of stakeholders including scientists, growers, extension specialists, the USDA APHIS Plant Protection and Quarantine personnel, the Department of Homeland Security inspectors, and diagnosticians in the National Plant Diagnostic Network in a Pandemic Preparedness workshop. Differences in response and spread of pathogens and stakeholder experiences will be examined using current methods and the aid of the new PAdb.&lt;br/&gt;&lt;br/&gt;This award is supported by the cross-directorate Predictive Intelligence for Pandemic Prevention Phase I (PIPP) program, which is jointly funded by the Directorates for Biological Sciences (BIO), Computer Information Science and Engineering (CISE), Engineering (ENG) and Social, Behavioral and Economic Sciences (SBE).&lt;br/&gt;&lt;br/&gt;This award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.]]></AbstractNarration>
+<MinAmdLetterDate>07/25/2022</MinAmdLetterDate>
+<MaxAmdLetterDate>07/25/2022</MaxAmdLetterDate>
+<ARRAAmount/>
+<TRAN_TYPE>Grant</TRAN_TYPE>
+<CFDA_NUM>47.070, 47.074</CFDA_NUM>
+<NSF_PAR_USE_FLAG>1</NSF_PAR_USE_FLAG>
+<FUND_AGCY_CODE>4900</FUND_AGCY_CODE>
+<AWDG_AGCY_CODE>4900</AWDG_AGCY_CODE>
+<AwardID>2200038</AwardID>
+<Investigator>
+<FirstName>Jean</FirstName>
+<LastName>Ristaino</LastName>
+<PI_MID_INIT>B</PI_MID_INIT>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Jean B Ristaino</PI_FULL_NAME>
+<EmailAddress><![CDATA[Jean_Ristaino@ncsu.edu]]></EmailAddress>
+<NSF_ID>000231527</NSF_ID>
+<StartDate>07/25/2022</StartDate>
+<EndDate/>
+<RoleCode>Principal Investigator</RoleCode>
+</Investigator>
+<Investigator>
+<FirstName>Ignazio</FirstName>
+<LastName>Carbone</LastName>
+<PI_MID_INIT/>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Ignazio Carbone</PI_FULL_NAME>
+<EmailAddress><![CDATA[ignazio_carbone@ncsu.edu]]></EmailAddress>
+<NSF_ID>000253500</NSF_ID>
+<StartDate>07/25/2022</StartDate>
+<EndDate/>
+<RoleCode>Co-Principal Investigator</RoleCode>
+</Investigator>
+<Investigator>
+<FirstName>Jason</FirstName>
+<LastName>Delborne</LastName>
+<PI_MID_INIT>A</PI_MID_INIT>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Jason A Delborne</PI_FULL_NAME>
+<EmailAddress><![CDATA[jadelbor@ncsu.edu]]></EmailAddress>
+<NSF_ID>000519434</NSF_ID>
+<StartDate>07/25/2022</StartDate>
+<EndDate/>
+<RoleCode>Co-Principal Investigator</RoleCode>
+</Investigator>
+<Investigator>
+<FirstName>Qingshan</FirstName>
+<LastName>Wei</LastName>
+<PI_MID_INIT/>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Qingshan Wei</PI_FULL_NAME>
+<EmailAddress><![CDATA[qwei3@ncsu.edu]]></EmailAddress>
+<NSF_ID>000806268</NSF_ID>
+<StartDate>07/25/2022</StartDate>
+<EndDate/>
+<RoleCode>Co-Principal Investigator</RoleCode>
+</Investigator>
+<Investigator>
+<FirstName>Chris</FirstName>
+<LastName>Jones</LastName>
+<PI_MID_INIT>M</PI_MID_INIT>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Chris M Jones</PI_FULL_NAME>
+<EmailAddress><![CDATA[cmjone25@ncsu.edu]]></EmailAddress>
+<NSF_ID>000842794</NSF_ID>
+<StartDate>07/25/2022</StartDate>
+<EndDate/>
+<RoleCode>Co-Principal Investigator</RoleCode>
+</Investigator>
+<Institution>
+<Name>North Carolina State University</Name>
+<CityName>RALEIGH</CityName>
+<ZipCode>27607</ZipCode>
+<PhoneNumber>9195152444</PhoneNumber>
+<StreetAddress>2601 WOLF VILLAGE WAY</StreetAddress>
+<StreetAddress2/>
+<CountryName>United States</CountryName>
+<StateName>North Carolina</StateName>
+<StateCode>NC</StateCode>
+<CONGRESSDISTRICT>02</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_ORG>NC02</CONGRESS_DISTRICT_ORG>
+<ORG_UEI_NUM>U3NVH931QJJ3</ORG_UEI_NUM>
+<ORG_LGL_BUS_NAME>NORTH CAROLINA STATE UNIVERSITY</ORG_LGL_BUS_NAME>
+<ORG_PRNT_UEI_NUM>N8DMK1K4C2K5</ORG_PRNT_UEI_NUM>
+</Institution>
+<Performance_Institution>
+<Name><![CDATA[North Carolina State University]]></Name>
+<CityName>Raleigh</CityName>
+<StateCode>NC</StateCode>
+<ZipCode>276957207</ZipCode>
+<StreetAddress><![CDATA[2601 Wolf Village Way]]></StreetAddress>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<StateName>North Carolina</StateName>
+<CountryFlag>1</CountryFlag>
+<CONGRESSDISTRICT>02</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_PERF>NC02</CONGRESS_DISTRICT_PERF>
+</Performance_Institution>
+<ProgramElement>
+<Code>177Y</Code>
+<Text>PIPP-Pandemic Prevention</Text>
+</ProgramElement>
+<ProgramReference>
+<Code>103Z</Code>
+<Text>PIPP-Pandemic Prevention</Text>
+</ProgramReference>
+<ProgramReference>
+<Code>9179</Code>
+<Text>GRADUATE INVOLVEMENT</Text>
+</ProgramReference>
+<Appropriation>
+<Code/>
+<Name/>
+<APP_SYMB_ID/>
+</Appropriation>
+<Fund>
+<Code>01002223DB</Code>
+<Name><![CDATA[NSF RESEARCH & RELATED ACTIVIT]]></Name>
+<FUND_SYMB_ID>040100</FUND_SYMB_ID>
+</Fund>
+<FUND_OBLG>2022~1000000</FUND_OBLG>
+</Award>
+</rootTag>

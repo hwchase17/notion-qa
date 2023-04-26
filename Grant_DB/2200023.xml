@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rootTag>
+<Award>
+<AwardTitle><![CDATA[Biodiversity, Conservation Science, and Climate Change]]></AwardTitle>
+<AGENCY>NSF</AGENCY>
+<AwardEffectiveDate>04/01/2022</AwardEffectiveDate>
+<AwardExpirationDate>03/31/2023</AwardExpirationDate>
+<AwardTotalIntnAmount>49998.00</AwardTotalIntnAmount>
+<AwardAmount>59988</AwardAmount>
+<AwardInstrument>
+<Value>Standard Grant</Value>
+</AwardInstrument>
+<Organization>
+<Code>06010000</Code>
+<Directorate>
+<Abbreviation>GEO</Abbreviation>
+<LongName>Directorate For Geosciences</LongName>
+</Directorate>
+<Division>
+<Abbreviation>RISE</Abbreviation>
+<LongName>Div of Res, Innovation, Synergies, &amp; Edu</LongName>
+</Division>
+</Organization>
+<ProgramOfficer>
+<SignBlockName>Brandon Jones</SignBlockName>
+<PO_EMAI>mbjones@nsf.gov</PO_EMAI>
+<PO_PHON>7032924713</PO_PHON>
+</ProgramOfficer>
+<AbstractNarration><![CDATA[This grant supports the National Council for Science and the Environment (now doing business as Global Council for Science and the Environment {GCSE}) in the delivery of the 2022 Annual Conference. The theme of the 2022 Annual Conference is Biodiversity, Conservation Science, and Climate Change and will be held virtually on June 21-24, 2022. The Conference will explore the complex interactions between biodiversity and climate change, and how these complexities factor into conservation strategies to protect global biodiversity. A main goal of the conference is to reframe the "tipping points" dialogue to emphasize the necessity for regenerative thinking, solution creation and action.  The conference will highlight success stories in conservation that should help guide us toward discovering more science and evidence-based solutions to conservation challenges.&lt;br/&gt;&lt;br/&gt;The theme of the GCSE 2022 Annual Conference, Biodiversity, Conservation Science, and Climate Change, encourages scientists, decision-makers, civil society leaders and practitioners, and youth to rethink the traditional "tipping points" narrative in order to address crucial issues impacting biodiversity conservation and climate change. The most recent report of the Intergovernmental Panel on Climate Change (IPCC) makes it abundantly clear that humanity is rapidly running out of time to confront the climate crisis before global warming makes conserving global biodiversity much harder—if not impossible. The central objective of the conference, is to identify practical ways to engage in regenerative decision spaces regarding climate solutions that protect life on earth and ensure a sustainable and resilient future for humanity itself.&lt;br/&gt;&lt;br/&gt;This award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.]]></AbstractNarration>
+<MinAmdLetterDate>03/22/2022</MinAmdLetterDate>
+<MaxAmdLetterDate>08/03/2022</MaxAmdLetterDate>
+<ARRAAmount/>
+<TRAN_TYPE>Grant</TRAN_TYPE>
+<CFDA_NUM>47.050</CFDA_NUM>
+<NSF_PAR_USE_FLAG>1</NSF_PAR_USE_FLAG>
+<FUND_AGCY_CODE>4900</FUND_AGCY_CODE>
+<AWDG_AGCY_CODE>4900</AWDG_AGCY_CODE>
+<AwardID>2200023</AwardID>
+<Investigator>
+<FirstName>Michelle</FirstName>
+<LastName>Wyman</LastName>
+<PI_MID_INIT/>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Michelle Wyman</PI_FULL_NAME>
+<EmailAddress><![CDATA[grants@gcseglobal.org]]></EmailAddress>
+<NSF_ID>000803850</NSF_ID>
+<StartDate>03/22/2022</StartDate>
+<EndDate/>
+<RoleCode>Principal Investigator</RoleCode>
+</Investigator>
+<Institution>
+<Name>National Council for Science and the Environment/CEDD</Name>
+<CityName>WASHINGTON</CityName>
+<ZipCode>200063771</ZipCode>
+<PhoneNumber>2022700041</PhoneNumber>
+<StreetAddress>1776 I ST NW STE 750</StreetAddress>
+<StreetAddress2/>
+<CountryName>United States</CountryName>
+<StateName>District of Columbia</StateName>
+<StateCode>DC</StateCode>
+<CONGRESSDISTRICT>00</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_ORG>DC00</CONGRESS_DISTRICT_ORG>
+<ORG_UEI_NUM>LLNMWDJVJ1Y9</ORG_UEI_NUM>
+<ORG_LGL_BUS_NAME>NATIONAL COUNCIL FOR SCIENCE AND THE ENVIRONMENT, THE</ORG_LGL_BUS_NAME>
+<ORG_PRNT_UEI_NUM/>
+</Institution>
+<Performance_Institution>
+<Name><![CDATA[National Council for Science and the Environment]]></Name>
+<CityName>Washington</CityName>
+<StateCode>DC</StateCode>
+<ZipCode>200063771</ZipCode>
+<StreetAddress><![CDATA[1776 Eye St]]></StreetAddress>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<StateName>District of Columbia</StateName>
+<CountryFlag>1</CountryFlag>
+<CONGRESSDISTRICT>00</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_PERF>DC00</CONGRESS_DISTRICT_PERF>
+</Performance_Institution>
+<ProgramElement>
+<Code>0619</Code>
+<Text>SPECIAL EMPHASIS PROGRAM</Text>
+</ProgramElement>
+<ProgramReference>
+<Code>7556</Code>
+<Text>CONFERENCE AND WORKSHOPS</Text>
+</ProgramReference>
+<Appropriation>
+<Code/>
+<Name/>
+<APP_SYMB_ID/>
+</Appropriation>
+<Fund>
+<Code>01002223DB</Code>
+<Name><![CDATA[NSF RESEARCH & RELATED ACTIVIT]]></Name>
+<FUND_SYMB_ID>040100</FUND_SYMB_ID>
+</Fund>
+<FUND_OBLG>2022~59988</FUND_OBLG>
+</Award>
+</rootTag>

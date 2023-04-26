@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rootTag>
+<Award>
+<AwardTitle><![CDATA[EDGE: Generating Tools to Study Spiralian Development]]></AwardTitle>
+<AGENCY>NSF</AGENCY>
+<AwardEffectiveDate>10/01/2021</AwardEffectiveDate>
+<AwardExpirationDate>07/31/2023</AwardExpirationDate>
+<AwardTotalIntnAmount>300000.00</AwardTotalIntnAmount>
+<AwardAmount>50665</AwardAmount>
+<AwardInstrument>
+<Value>Standard Grant</Value>
+</AwardInstrument>
+<Organization>
+<Code>08090000</Code>
+<Directorate>
+<Abbreviation>BIO</Abbreviation>
+<LongName>Direct For Biological Sciences</LongName>
+</Directorate>
+<Division>
+<Abbreviation>IOS</Abbreviation>
+<LongName>Division Of Integrative Organismal Systems</LongName>
+</Division>
+</Organization>
+<ProgramOfficer>
+<SignBlockName>Theodore Morgan</SignBlockName>
+<PO_EMAI>tmorgan@nsf.gov</PO_EMAI>
+<PO_PHON>7032927868</PO_PHON>
+</ProgramOfficer>
+<AbstractNarration><![CDATA[Difficulties associated with the supply and culture of live marine animals is a major hurdle for biological research, especially for in-land laboratories without direct access to fresh sea water. This project is developing a convenient, high capacity culture system to raise marine invertebrates without the need to be located near the ocean. The immediate goal is to develop a recirculating aquarium system with automated controls to monitor and adjust water quality, which also incorporates robotic, continuous feeding. Conditions will be optimized to raise slipper snails, a highly useful system for many different types of biological studies, but these culture methods will also be useful for raising other filter-feeding animals, including clams, sponges, corals, etc., which are of great interest to the scientific community. As such, this project will also permit more general advances in marine aquaculture that should be applicable for rearing various types of seafood (shellfish). As this research involves undergraduate and post-doctoral students, it will provide valuable opportunities to train future generations of scientists and teachers. Finally, this project will also foster interdisciplinary interactions between the fields of biology and engineering.&lt;br/&gt;&lt;br/&gt;This project is developing high capacity culture conditions and equipment to rapidly rear large numbers of Crepidula atrasolea snails for biological studies. The goal is to develop a recirculating aquarium system with automated controls to monitor and adjust water quality, which also incorporates automated, continuous feeding. The proposed project will develop a critical set of tools needed to permit labs to study basic biological processes using a versatile representative of the largest, but least studied, clade of bilaterian metazoans (the Lophotrochozoa/Spiralia). Husbandry approaches developed in this project will permit labs to rear these animals rapidly through successive generations, to provide a continuous supply of embryos and adults, and ultimately to develop inbred lines, without the need to be located near the ocean. These lab-reared snails will be freely distribute to other research labs who request these resources. Furthermore, these culture methods will be of use more broadly to others working with filter-feeding marine organisms, including bivalves, crustaceans, sponges, corals, polychaetes, etc. Finally, this project provides valuable training for researchers to set up and use these resources. Outreach efforts provide training on how to use these approaches through detailed publications, and schematics, and by distributing a series of narrated instructional videos through our public, open-access lab web site. This research involves undergraduate and post-doctoral students to provide valuable opportunities to train future scientists and teachers, and will generate valuable resources for the scientific community.&lt;br/&gt;&lt;br/&gt;This award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.]]></AbstractNarration>
+<MinAmdLetterDate>12/06/2021</MinAmdLetterDate>
+<MaxAmdLetterDate>12/06/2021</MaxAmdLetterDate>
+<ARRAAmount/>
+<TRAN_TYPE>Grant</TRAN_TYPE>
+<CFDA_NUM>47.074</CFDA_NUM>
+<NSF_PAR_USE_FLAG>1</NSF_PAR_USE_FLAG>
+<FUND_AGCY_CODE>4900</FUND_AGCY_CODE>
+<AWDG_AGCY_CODE>4900</AWDG_AGCY_CODE>
+<AwardID>2200033</AwardID>
+<Investigator>
+<FirstName>Jonathan</FirstName>
+<LastName>Henry</LastName>
+<PI_MID_INIT>J</PI_MID_INIT>
+<PI_SUFX_NAME/>
+<PI_FULL_NAME>Jonathan J Henry</PI_FULL_NAME>
+<EmailAddress><![CDATA[jhenry@mbl.edu]]></EmailAddress>
+<NSF_ID>000476605</NSF_ID>
+<StartDate>12/06/2021</StartDate>
+<EndDate/>
+<RoleCode>Principal Investigator</RoleCode>
+</Investigator>
+<Institution>
+<Name>Marine Biological Laboratory</Name>
+<CityName>WOODS HOLE</CityName>
+<ZipCode>025431015</ZipCode>
+<PhoneNumber>5082897243</PhoneNumber>
+<StreetAddress>7 M B L ST</StreetAddress>
+<StreetAddress2/>
+<CountryName>United States</CountryName>
+<StateName>Massachusetts</StateName>
+<StateCode>MA</StateCode>
+<CONGRESSDISTRICT>09</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_ORG>MA09</CONGRESS_DISTRICT_ORG>
+<ORG_UEI_NUM>M2XKLRTA9G44</ORG_UEI_NUM>
+<ORG_LGL_BUS_NAME>THE MARINE BIOLOGICAL LABORATORY</ORG_LGL_BUS_NAME>
+<ORG_PRNT_UEI_NUM>M2XKLRTA9G44</ORG_PRNT_UEI_NUM>
+</Institution>
+<Performance_Institution>
+<Name><![CDATA[Marine Biological Laboratory]]></Name>
+<CityName>Woods Hole</CityName>
+<StateCode>MA</StateCode>
+<ZipCode>025431015</ZipCode>
+<StreetAddress><![CDATA[7 MBL Street]]></StreetAddress>
+<CountryCode>US</CountryCode>
+<CountryName>United States</CountryName>
+<StateName>Massachusetts</StateName>
+<CountryFlag>1</CountryFlag>
+<CONGRESSDISTRICT>09</CONGRESSDISTRICT>
+<CONGRESS_DISTRICT_PERF>MA09</CONGRESS_DISTRICT_PERF>
+</Performance_Institution>
+<ProgramElement>
+<Code>1119</Code>
+<Text>Animal Developmental Mechanism</Text>
+</ProgramElement>
+<ProgramReference>
+<Code>050Z</Code>
+<Text>EDGE Enabling Discovery through Genomic</Text>
+</ProgramReference>
+<Appropriation>
+<Code/>
+<Name/>
+<APP_SYMB_ID/>
+</Appropriation>
+<Fund>
+<Code>01001819DB</Code>
+<Name><![CDATA[NSF RESEARCH & RELATED ACTIVIT]]></Name>
+<FUND_SYMB_ID>040100</FUND_SYMB_ID>
+</Fund>
+<FUND_OBLG>2018~50665</FUND_OBLG>
+</Award>
+</rootTag>

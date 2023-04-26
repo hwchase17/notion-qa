@@ -1,4 +1,4 @@
-"""This is the logic for ingesting Notion data into LangChain."""
+"""This is the logic for ingesting Grant xml data into LangChain."""
 from pathlib import Path
 from langchain.text_splitter import CharacterTextSplitter
 import faiss
@@ -8,7 +8,8 @@ import pickle
 
 
 # Here we load in the data in the format that Notion exports it in.
-ps = list(Path("Notion_DB/").glob("**/*.md"))
+#ps = list(Path("Notion_DB/").glob("**/*.md"))
+ps = list(Path("Grant_DB/").glob("*.xml"))
 
 data = []
 sources = []
