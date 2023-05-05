@@ -1,0 +1,3 @@
+[submodule "conventions"]
+	path = conventions
+	url = https://github.com/octoenergy/conventions.git
