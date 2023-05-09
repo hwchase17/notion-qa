@@ -5,3 +5,4 @@ streamlit
 streamlit-chat
 tiktoken
 transformers
+python-dotenv
