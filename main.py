@@ -71,7 +71,7 @@ if proj_seletection:
     # )
     # hf = HuggingFacePipeline(pipeline=pipe)
 
-    llm = OpenAI(temperature=0,openai_api_key="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")
+    llm = OpenAI(temperature=0,openai_api_key=OPENAI_API_KEY)
     chain = VectorDBQAWithSourcesChain.from_llm(llm=llm, vectorstore=store)
 
     # st.write(chain)
