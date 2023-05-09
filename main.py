@@ -12,6 +12,12 @@ import json
 import os
 from dotenv import load_dotenv
 from langchain.prompts import PromptTemplate
+from pathlib import Path
+from langchain.text_splitter import CharacterTextSplitter
+import faiss
+from langchain.vectorstores import FAISS
+from langchain.embeddings import OpenAIEmbeddings
+import pickle
 
 load_dotenv()
 # prompt = PromptTemplate(
