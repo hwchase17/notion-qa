@@ -25,7 +25,7 @@ load_dotenv()
 #     template='Content: {page_content}\nProject: {source_main}\nSource: {source_sub}', template_format='f-string'
 #     )
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "YOUR API KET"
 st.set_page_config(page_title="Blendle Notion QA Bot", page_icon=":robot:")
 st.header("Blendle Notion QA Bot")
 
