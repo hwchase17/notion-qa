@@ -57,7 +57,7 @@ if proj_seletection:
 
     # Load the LangChain.
     index = faiss.read_index(index_file_name.replace("indexes/",""))
-    with open(faiss_store_name, "rb") as f:
+    with open(faiss_store_name.replace("faiss_store/",""), "rb") as f:
         store = pickle.load(f)
 
     #st.write(store)
