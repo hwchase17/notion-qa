@@ -51,7 +51,7 @@ for i, d in enumerate(data):
 
 
 # Here we create a vector store from the documents and save it to disk.
-store = FAISS.from_texts(docs, OpenAIEmbeddings(), metadatas=metadatas)
+store = FAISS.from_texts(docs, OpenAIEmbeddings(openai_api_key="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"), metadatas=metadatas)
 faiss.write_index(store.index, "docs.index")
 store.index = None
 with open("faiss_store.pkl", "wb") as f:
