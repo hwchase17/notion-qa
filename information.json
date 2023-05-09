@@ -1,0 +1,17 @@
+[
+    {
+        "folder": "Blendle's Employee Handbook a834d55573614857a48a9ce9ec4194e3",
+        "index": "indexes/docs_0_Blendle'sEmployeeHandbooka834d55573614857a48a9ce9ec4194e3.index",
+        "faiss_store": "faiss_store/faiss_store_Blendle'sEmployeeHandbooka834d55573614857a48a9ce9ec4194e3.pkl"
+    },
+    {
+        "folder": "Notion_DB",
+        "index": "indexes/docs_1_Notion_DB.index",
+        "faiss_store": "faiss_store/faiss_store_Notion_DB.pkl"
+    },
+    {
+        "folder": "How The Movie Matrix Is Real 0270e4796af64d06a1b02e7b75046c8d",
+        "index": "indexes/docs_2_HowTheMovieMatrixIsReal0270e4796af64d06a1b02e7b75046c8d.index",
+        "faiss_store": "faiss_store/faiss_store_HowTheMovieMatrixIsReal0270e4796af64d06a1b02e7b75046c8d.pkl"
+    }
+]
