@@ -20,7 +20,7 @@ load_dotenv()
 #     )
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
+OPENAI_API_KEY = "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"
 st.set_page_config(page_title="Blendle Notion QA Bot", page_icon=":robot:")
 st.header("Blendle Notion QA Bot")
 
@@ -56,7 +56,7 @@ if proj_seletection:
             break
 
     # Load the LangChain.
-    index = faiss.read_index(index_file_name)
+    index = faiss.read_index(index_file_name.replace("indexes/",""))
     with open(faiss_store_name, "rb") as f:
         store = pickle.load(f)
 
