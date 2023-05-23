@@ -32,10 +32,10 @@ It was downloaded October 18th so may have changed slightly since then!
 In order to ask a question, run a command like:
 
 ```shell
-python qa.py "What is the work from home policy"
+python qa.py "is there food in the office?"
 ```
 
-You can switch out `What is the work from home policy` for any question of your liking!
+You can switch out `is there food in the office?` for any question of your liking!
 
 This exposes a chat interface for interacting with a Notion database.
 IMO, this is a more natural and convenient interface for getting information.
@@ -72,5 +72,5 @@ python ingest.py
 Boom! Now you're done, and you can ask it questions like:
 
 ```shell
-python qa.py "What is the work from home policy"
+python qa.py "is there food in the office?"
 ```
