@@ -1,6 +1,6 @@
 """Ask a question to the notion database."""
 import faiss
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.chains import RetrievalQAWithSourcesChain
 import pickle
 import argparse
