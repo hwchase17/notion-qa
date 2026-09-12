@@ -1,9 +1,9 @@
 """This is the logic for ingesting Notion data into LangChain."""
 from pathlib import Path
-from langchain.text_splitter import CharacterTextSplitter
+from langchain_text_splitters import CharacterTextSplitter
 import faiss
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_openai import OpenAIEmbeddings
 import pickle
 
 

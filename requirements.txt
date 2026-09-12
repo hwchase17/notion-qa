@@ -1,6 +1,9 @@
-langchain==0.0.170
+langchain>=0.1
 openai
 faiss-cpu
 streamlit
 streamlit-chat
 tiktoken
+langchain-community>=0.0.20
+langchain-openai>=0.0.5
+langchain-text-splitters>=0.0.1
